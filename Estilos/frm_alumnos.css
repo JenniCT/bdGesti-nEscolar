@@ -1,0 +1,41 @@
+body{
+      
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:  #212529;
+    font-family:'Century Gothic';
+}
+
+/*Barra de navegación*/
+nav {
+    background-color: whitesmoke;
+}
+
+/*Tabla de alumnos */
+table{
+    font-size:15px;
+    width:90%;  
+    margin: auto;
+    border-radius: 30px;
+    align-items: center;
+    
+
+}
+table tr th{
+    background-color: #032e55;
+}
+table tr th, td{
+    font-size: 14px;  
+    border: 1px solid #032e55; 
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px !important;
+}
+
+#Añadir{
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}

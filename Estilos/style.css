@@ -1,0 +1,44 @@
+/* Elimina los estilos de padding y margen a nivel global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total */
+}
+
+body {
+    background-color: #212529;
+    font-family: 'Tw Cen MT Condensed', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 10px; /* Añade un margen superior para separar el encabezado del menú */
+}
+
+.formu {
+    width: 80%; /* Cambia el ancho del formulario para que se adapte mejor a diferentes tamaños de pantalla */
+    max-width: 500px; /* Limita el ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #1e6490;
+    background-color: #212529;
+    font-size: 20px;
+}
+
+.formu input, .formu select, .formu button {
+    width: 100%; /* Ajusta el ancho de los elementos de formulario al 100% del contenedor */
+    margin-bottom: 10px; /* Añade un margen inferior a los elementos de formulario */
+}
+
+.formu button {
+    background-color: #1e6490;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
