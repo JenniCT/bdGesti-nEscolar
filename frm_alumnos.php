@@ -80,11 +80,11 @@ if (isset($_POST['btnBuscar'])) {
 
     <!------Encabezado-->
     <header> 
-        <h1 style="font-size:18px; text-align:center; padding-top: 20px; color:white;"> REGISTRO DE ALUMNOS</h1>
+        <h1> REGISTRO DE ALUMNOS</h1>
     </header>
 
     <!------opciones de menú-->
-    <nav  class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand">
                 <p style="font-size:15px">Bienvenido, <?php echo $correo_usuario; ?>.</p>
@@ -151,7 +151,7 @@ if (isset($_POST['btnBuscar'])) {
         ?>
     </table>
     
-    
+    <br>
 
 </body>
 </html>

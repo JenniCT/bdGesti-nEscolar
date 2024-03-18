@@ -134,24 +134,24 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                             </div>
                         </div>
                         <br>
-                        <select class="form-select" aria-label="Default select example" id="idGrado" name="idGrado" required>
-                            <option value="" selected disabled><?php echo $idGrado; ?></option>
-                            <option value="1J">1J</option>
-                            <option value="1K">1K</option>
-                            <option value="2J">2J</option>
-                            <option value="2K">2K</option>
-                            <option value="3J">3J</option>
-                            <option value="3K">3K</option>
-                            <option value="4J">4J</option>
-                            <option value="4K">4K</option>
-                            <option value="5J">5J</option>
-                            <option value="6J">6J</option>
-                            <option value="6K">6K</option>
-                            <option value="7J">7J</option>
-                            <option value="7K">7K</option>
-                            <option value="8J">8J</option>
-                            <option value="8K">8K</option>
-                            <option value="9J">9J</option>
+                        <select class="form-select" aria-label="Default select example" id="idGrado" name="idGrado">
+                            <option value="" selected disabled>Seleccionar Grado y Grupo</option>
+                            <option value="1J" <?php if ($idGrado == '1J') echo 'selected'; ?> >1J</option>
+                            <option value="1K" <?php if ($idGrado == '1K') echo 'selected'; ?> >1K</option>
+                            <option value="2J" <?php if ($idGrado == '2J') echo 'selected'; ?> >2J</option>
+                            <option value="2K" <?php if ($idGrado == '2K') echo 'selected'; ?> >2K</option>
+                            <option value="3J" <?php if ($idGrado == '3J') echo 'selected'; ?> >3J</option>
+                            <option value="3K" <?php if ($idGrado == '3K') echo 'selected'; ?> >3K</option>
+                            <option value="4J" <?php if ($idGrado == '4J') echo 'selected'; ?> >4J</option>
+                            <option value="4K" <?php if ($idGrado == '4K') echo 'selected'; ?> >4K</option>
+                            <option value="5J" <?php if ($idGrado == '5J') echo 'selected'; ?> >5J</option>
+                            <option value="6J" <?php if ($idGrado == '6J') echo 'selected'; ?> >6J</option>
+                            <option value="6K" <?php if ($idGrado == '6K') echo 'selected'; ?> >6K</option>
+                            <option value="7J" <?php if ($idGrado == '7J') echo 'selected'; ?> >7J</option>
+                            <option value="7K" <?php if ($idGrado == '7K') echo 'selected'; ?> >7K</option>
+                            <option value="8J" <?php if ($idGrado == '8J') echo 'selected'; ?> >8J</option>
+                            <option value="8K" <?php if ($idGrado == '8K') echo 'selected'; ?> >8K</option>
+                            <option value="9J" <?php if ($idGrado == '9J') echo 'selected'; ?> >9J</option>
                         </select>
                             <br>
                             <button type="submit" class="btn btn-primary">Modificar Alumno</button>

@@ -35,12 +35,12 @@ $aMaterno = $_GET['aMaterno'];
 $idGrado = $_GET['idGrado'];
 
 // Mostrar los datos en el PDF
-$pdf->Cell(0,10,'Número: '.$numero,0,1);
-$pdf->Cell(0,10,'Matrícula: '.$matricula,0,1);
-$pdf->Cell(0,10,'Nombre: '.$nombre,0,1);
-$pdf->Cell(0,10,'Apellido Paterno: '.$aPaterno,0,1);
-$pdf->Cell(0,10,'Apellido Materno: '.$aMaterno,0,1);
-$pdf->Cell(0,10,'Grado y Grupo: '.$idGrado,0,1);
+$pdf->Cell(0,10,utf8_decode('Número: ' . $numero),0,1);
+$pdf->Cell(0,10,utf8_decode('Matrícula: ' . $matricula),0,1);
+$pdf->Cell(0,10,utf8_decode('Nombre: ' . $nombre),0,1);
+$pdf->Cell(0,10,utf8_decode('Apellido Paterno: ' . $aPaterno),0,1);
+$pdf->Cell(0,10,utf8_decode('Apellido Materno: ' . $aMaterno),0,1);
+$pdf->Cell(0,10,utf8_decode('Grado y Grupo: ' . $idGrado),0,1);
 
 // Salida del PDF
 $pdf->Output();

@@ -23,9 +23,11 @@ h1 {
     margin: 0 auto; /* Centra el formulario horizontalmente */
     padding: 30px;
     border-radius: 20px;
-    border: 2px solid #1e6490;
+    /* border: 2px solid #1e6490; */
     background-color: #212529;
     font-size: 20px;
+    box-shadow: 10px 10px 10px 0px  rgba(0, 0, 0, 0.2), 8px 8px 10px 10px  rgba(0, 0, 0, 0.2); /**/
+
 }
 
 .formu input, .formu select, .formu button {
@@ -41,4 +43,7 @@ h1 {
     cursor: pointer;
 }
 
+.continer{
+    box-shadow: 10px 10px 5px rgb(230, 196, 173);
+}
 

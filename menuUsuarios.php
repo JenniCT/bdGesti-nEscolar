@@ -67,7 +67,7 @@ $conexion->close();
             <div class="col"></div>
                 <div class="formu">
                     <!-- Encabezado -->
-                    <h1>Menú de usuario</h1>
+                    <h1 >Menú de usuario</h1>
 
                     <form action="" method="post" >
                         
@@ -93,7 +93,7 @@ $conexion->close();
 
                         ?>
 
-                        <br><button type="submit" class="btn btn-primary">Entrar</button>
+                        <br><button type="submit" class="btn btn-outline-primary">Entrar</button>
 
                     </form>
                 </div>

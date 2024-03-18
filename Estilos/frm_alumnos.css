@@ -1,41 +1,122 @@
-body{
-      
+body {
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color:  #212529;
-    font-family:'Century Gothic';
+    background-color: #212529;
+    font-family: 'Tw Cen MT';
 }
 
-/*Barra de navegación*/
-nav {
-    background-color: whitesmoke;
+header h1 {
+
+    font-size:20px; 
+    text-align:center; 
+    padding-top: 20px; 
+    color:#b4c3d1;
 }
 
-/*Tabla de alumnos */
-table{
-    font-size:15px;
-    width:90%;  
+
+/* Tabla de alumnos */
+table {
+    font-size: 15px;
+    width: 60%;
     margin: auto;
-    border-radius: 30px;
     align-items: center;
-    
+    margin-top: 30px; 
+    box-shadow: 
+        15px 0px 20px 15px rgba(0, 0, 0, 0.2), /* Sombra en la parte superior */
+        15px 0px 20px 15px rgba(0, 0, 0, 0.2); /* Sombra en la parte derecha */
+        /*0px 0px 20px 15px rgba(0, 0, 0, 0.2), /* Sombra en la parte inferior */
+        /*0px 0px 20px 15px rgba(0, 0, 0, 0.2); /* Sombra en la parte izquierda */
 
 }
-table tr th{
+
+table tr th {
+   
     background-color: #032e55;
+    
 }
-table tr th, td{
-    font-size: 14px;  
-    border: 1px solid #032e55; 
-    color: whitesmoke;
+
+table tr th, td {
+
+    padding-top: 10px;
+    font-size: 14px;
+    border: 1px solid #212529;
+    color:  #b4c3d1;
     text-align: center;
     padding: 5px !important;
+    
 }
 
-#Añadir{
+#Añadir {
     margin-right: 10px;
     margin-left: 10px;
-    
+}
+
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 80%; /* Reducir el ancho de la tabla */
+    }
+    table th,
+    table td {
+        font-size: 12px; /* Reducir el tamaño de fuente en las celdas */
+        padding: 3px !important; /* Reducir el relleno en las celdas */
+    }
+}
+
+
+/* Establece un diseño flex para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ajusta el tamaño de la fuente y el espaciado de los elementos de la barra de navegación */
+.navbar-brand p, .navbar-nav a {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+/* Ajusta el tamaño de la fuente y el espaciado del campo de búsqueda */
+.form-control {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+/* Ajusta el tamaño de la fuente y el espaciado de los botones */
+.btn {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+/* Ajusta el tamaño de la imagen de salida */
+#Salir img {
+    width: 25px;
+    padding-top: 5px;
+}
+
+/* Aplica estilos responsivos para adaptar los elementos de la barra de navegación en pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Muestra los elementos de la barra de navegación en una columna */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Ajusta el margen inferior del formulario de búsqueda */
+    .form-control {
+        margin-bottom: 10px;
+    }
+
+    /* Ajusta el margen inferior de los botones */
+    .btn {
+        margin-bottom: 10px;
+    }
+
+    /* Ajusta el margen inferior de la imagen de salida */
+    #Salir img {
+        margin-bottom: 10px;
+    }
 }
